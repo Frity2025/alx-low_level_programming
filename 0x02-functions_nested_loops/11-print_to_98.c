@@ -2,10 +2,10 @@
 #include "main.h"
 
 /**
- * void print_to_98(int n) -prints all natural numbers from n to 98
+ * print_to_98 -prints all natural numbers from n to 98
  * @n:int n
  * Description: using the main function
- * this program a function that checks for lowercase character.
+ * this program prints all natural numbers from n to 98
  * Return: nothing
  */
 void print_to_98(int n)
