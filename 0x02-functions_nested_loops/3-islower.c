@@ -2,6 +2,7 @@
 
 /**
  * _islower - a function that checks for lowercase character.
+ * @c:int c
  * Description: using the main function
  * this program a function that checks for lowercase character.
  * Return: 1 if lowercase else return 0
