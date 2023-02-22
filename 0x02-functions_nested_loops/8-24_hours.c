@@ -1,10 +1,11 @@
+/*
+ * File: 8-24_hours.c
+ * Auth: Brennan D Baraban
+ */
 #include "main.h"
 
 /**
  * jack_bauer - a function that prints every minute of the day of Jack Bauer
- * @jack_bauer:time
- * Description: using the main function
- * this program  prints every minute of the day of Jack Bauer
  * Return: nothing
  */
 void jack_bauer(void)
