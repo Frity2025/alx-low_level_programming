@@ -1,1 +1,1 @@
-A program that applies the consept of nested loop and focus on function
+Function that checks for a digit (0 through 9)
