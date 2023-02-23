@@ -5,11 +5,11 @@
  * @c:int c
  * Description: using the main function
  * this program a function checks for upperrcase character.
- * Return: 1 if lowercase else return 0
+ * Return: 1 if uppercase else return 0
  */
 int _isupper(int c)
 {
-	if (c >= 'a' && c <= 'z')
+	if (c >= 'A' && c <= 'Z')
 	{
 		return (1);
 	}
