@@ -1,6 +1,8 @@
 #ifndef MAIN_H
 #define MAIN_H
 #include <stdio.h>
+long int biggestFactor(long int a);
+int isPrime(long int n);
 void more_numbers(void);
 void print_number(int n);
 int _isupper(int c);
