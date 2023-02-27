@@ -1,1 +1,1 @@
-a function that reverses a string
+function that prints every other character of a string
