@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
- * reverse_array - reverse the content of an integer.
+ * reverse_array - reverese the content of the array
  * @a: an array of integers
- * @n: the number of elements 
+ * @n: the number of elements to swap
  *
  * Return: nothing.
  */
@@ -12,10 +12,13 @@ void reverse_array(int *a, int n)
 {
 	int i, temp;
 
-	for (i = n - 1; i >= n / 2; i--)
+	i = n - 1;
+
+	while (i >= n / 2)
 	{
 		temp = a[n - 1 - i];
 		a[n - 1 - i] = a[i];
 		a[i] = temp;
+		i--;
 	}
 }
