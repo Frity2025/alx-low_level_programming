@@ -1,1 +1,1 @@
-A function that compare two strings
+ function that reverses the content of an array of integers.
