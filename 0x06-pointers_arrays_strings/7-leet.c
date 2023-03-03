@@ -9,7 +9,7 @@
 char *leet(char *s)
 {
 	char *r = s;
-	char leetLetter[] = {'a' , 'e' , 'o', 't', 'l'};
+	char leetLetter[] = {'a', 'e', 'o', 't', 'l'};
 	char leetNumn[] = {4, 3, 0, 7, 1};
 	int i = 0;
 
