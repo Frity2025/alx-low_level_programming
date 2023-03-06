@@ -1,1 +1,1 @@
-A function that gets length prefix substring
+A function that searches string in any  sets of bytes
