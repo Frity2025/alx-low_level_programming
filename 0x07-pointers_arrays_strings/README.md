@@ -1,1 +1,1 @@
-A function that locate character in a string
+A function that gets length prefix substring
