@@ -1,1 +1,1 @@
-A function locate substring
+function that sets the value of a pointer to a char
