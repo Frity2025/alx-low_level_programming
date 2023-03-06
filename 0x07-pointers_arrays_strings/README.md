@@ -1,1 +1,1 @@
-A function that copies memory area
+A function that locate character in a string
