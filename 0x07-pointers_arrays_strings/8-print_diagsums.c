@@ -12,14 +12,14 @@
 
 void print_diagsums(int *a, int size)
 {
-	int i,  sumDr = 0, sumDl = 0;
+	int n;
 
-	for (i = 0; i < size; i++)
+	unsigned int sum = 0, sum1 = 0;
+
+	for (n = 0; n < size; n++)
 	{
-		sumDr = sumDr + a[i];
-		sumDl = sumDl + a[size - i - 1];
-		a = a + size;
+		sum = sum +  a[(size * n) + n];
+		sum1 = sum1 +  a[(size * (n + 1)) - (n + 1)];
 	}
-	printf("%d ", sumDr);
-	printf("%d\n", sumDl);
+	printf("%d, %d\n", sum, sum1);
 }
