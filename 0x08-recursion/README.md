@@ -1,1 +1,1 @@
-Function that returns the value of x raised to the power of y
+function that returns the length of a string
