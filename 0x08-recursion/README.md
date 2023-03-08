@@ -1,1 +1,1 @@
-A function that reurns a factorial of a given number
+ function that prints a string, followed by a new line
