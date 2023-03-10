@@ -9,18 +9,27 @@
   */
 int main(int argc, char *argv[])
 {
-	int i, add = 0;
+	int i, j, k, add = 0;
 
-	for (i = 0; i < argc; i++)
+	if (argc == 0)
 	{
-		if (i > 0)
+		printf("0\n");
+	}
+
+	for (i = 1; i < argc; i++)
+	{
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			if (atoi(argv[i]) == 0)
+			if (argv[i][j] > '9' || argv[i][j] < '0')
 			{
-				return (printf("Error\n"), 1);
+				printf("Error\n");
+				return (1);
 			}
-		add = add + atoi(argv[i]);
 		}
+	}
+	for (k = 1; k < argc; k++)
+	{
+		add = add + atoi(argv[k]);
 	}
 	printf("%d\n", add);
 	return (0);
