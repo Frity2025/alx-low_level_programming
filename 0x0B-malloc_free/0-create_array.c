@@ -2,11 +2,10 @@
 #include "main.h"
 #include<stdlib.h>
 /**
- *
  * create_array -create and initalize a character of array
  * @size :size of an array
  * @c :character to be created and intialized
- * return - a pointer to char or NULL if it fails
+ * Return: pointer to char or NULL if it fails
  */
 char *create_array(unsigned int size, char c)
 {
@@ -14,7 +13,7 @@ char *create_array(unsigned int size, char c)
 
 	unsigned int i;
 
-s =(char*) malloc(size * sizeof(c));
+	s = malloc(size * sizeof(c));
 	if (size == 0)
 	{
 		return (NULL);
