@@ -3,11 +3,11 @@
 #include <stdlib.h>
 
 /**
- * string_nconcat  - check the code
- * @s1:first string 
+ * string_nconcat  - concatenates two strings.
+ * @s1:first string
  * @s2:second string
- * @n:
- * Return: Always 0.
+ * @n:size of bytes
+ * Return: pointer shall point to a newly allocated space in memory.
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
@@ -27,17 +27,15 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (n > j)
 		n = j;
 	k = i + n;
-	s3 = malloc(k +1);
+	s3 = malloc(k + 1);
 
-	if(s3 == NULL)
+	if (s3 == NULL)
 		return (NULL);
 	for (l = 0; l < k; l++)
 		if (l < i)
 			s3[l] = s1[l];
 		else
-			s3[l] = s2[l -i];
+			s3[l] = s2[l - i];
 	s3[l] = '\0';
 	return (s3);
-}	
-
-
+}
