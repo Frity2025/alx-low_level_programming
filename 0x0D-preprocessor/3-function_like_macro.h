@@ -1,4 +1,5 @@
-# ifndef _function_like_macro_
-# define _function_like_macro_
+# ifndef _FUNCTION_LIKE_MACRO__
+# define _FUNCTION_LIKE_MACRO__
+
 # define ABS(x) (((x) < 0) ? (x * -1) : (x))
 # endif
