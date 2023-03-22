@@ -18,12 +18,11 @@ int (*get_op_func(char *s))(int, int)
 	};
 	int i;
 
-	for (i = 0; (s[0] != *ops[i].op && i < 4); i++)
-		;
-	if (s[1] != '\0' || s == NULL || s[0] != *ops[i].op)
+	for (i = 0; i < 6; i++)
 	{
-		printf("Error\n");
-		exit(99);
+		if (s[0] == ops->op[i])
+			break;
 	}
-	return (ops[i].f);
+
+	return (ops[i / 2].f);
 }
