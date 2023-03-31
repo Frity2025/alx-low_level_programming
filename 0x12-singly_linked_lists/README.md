@@ -6,3 +6,5 @@
        Function that adds a new node at the beginning of a list_t list.
 3. Add node at the end
        Function that adds a new node at the end of a list_t list.
+4. Free list
+       Function that frees a list_t list.
