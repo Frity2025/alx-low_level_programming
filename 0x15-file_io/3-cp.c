@@ -40,12 +40,12 @@ int main(int argc, char *argv[])
 			exit(98);
 		}
 		y = write(destination, buf, x);
-		if (x < y)
-			dprintf(STDERR_FILENO, "Error:can't write from file %s\n", argv[2]);
+		if (y < x)
+			dprintf(STDERR_FILENO, "Error:can't write from file %s\n", argv[2]), exit(99);
 	}
-	if (close(original == -1))
+	if (close(original) == -1)
 		dprintf(STDERR_FILENO, "Error:can't close fd  %d\n", original), exit(100);
-	if (close(destination == -1))
+	if (close(destination) == -1)
 		dprintf(STDERR_FILENO, "Error:can't close fd  %d\n", destination), exit(100);
 	return (0);
 }
