@@ -22,9 +22,7 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error:can't read from file %s\n", argv[1]);
 		exit(98);
 	}
-	destination = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC,
-			S_IRUSR | S_IWUSR | S_IRGRP |
-			S_IWGRP | S_IROTH);
+	destination = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	if (destination == -1)
 	{
 		 dprintf(STDERR_FILENO, "Error:can't write from file %s\n", argv[2]);
