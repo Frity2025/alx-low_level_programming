@@ -14,3 +14,5 @@ Task 6
 	Write a function that deletes the head node of a listint_t linked list, and returns the head node’s data (n)
 Task 7
 	Write a function that returns the nth node of a listint_t linked list.
+Task 8
+	Write a function that returns the sum of all the data (n) of a listint_t linked list
