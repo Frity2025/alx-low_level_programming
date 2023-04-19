@@ -20,3 +20,5 @@ Task 9
 	Write a function that inserts a new node at a given position.
 Task 10
 	Write a function that deletes the node at index index of a listint_t linked list
+Task 100
+	Write a function that reverses a listint_t linked list.
